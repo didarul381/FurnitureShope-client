@@ -10,11 +10,11 @@ const Home = () => {
 
     const{data:catagories=[]}=useQuery({
         queryKey:['catagories'],
-        queryFn:()=> fetch('http://localhost:5000/catagories')
+        queryFn:()=> fetch('https://y-pearl-one.vercel.app/catagories')
         .then(res=>res.json())
     })
 //     useEffect(()=>{
-//   fetch('http://localhost:5000/catagories')
+//   fetch('https://y-pearl-one.vercel.app/catagories')
 //   .then(res=>res.json())
 //   .then(data=>setCatagories(data))
 

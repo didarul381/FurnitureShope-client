@@ -28,7 +28,7 @@ const BookingModeal = ({buy}) => {
             location
         }
     //    console.log(booking);
-       fetch('http://localhost:5000/bookings',{
+       fetch('https://y-pearl-one.vercel.app/bookings',{
         method:"POST",
         headers:{
             'content-type':'application/json'

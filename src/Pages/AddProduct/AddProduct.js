@@ -59,7 +59,7 @@ const AddProduct = () => {
          }
 
          //save doctor information to the database
-         fetch('http://localhost:5000/catagories',{
+         fetch('https://y-pearl-one.vercel.app/catagories',{
               method:"PUT",
              headers:{
                  'content-type':'application/json',

@@ -7,14 +7,14 @@ const AllUsers = () => {
     const{data:users=[],refetch}= useQuery({
         queryKey:['users'],
         queryFn: async()=>{
-            const res= await fetch('http://localhost:5000/users');
+            const res= await fetch('https://y-pearl-one.vercel.app/users');
             const data=await res.json();
             return data;
         }
     })
 
     const handleAdmine =(id)=>{
-        fetch(`http://localhost:5000/users/admin/${id}`,{
+        fetch(`https://y-pearl-one.vercel.app/users/admin/${id}`,{
           method:"PUT",
           headers:{
               authorization:`bearer ${localStorage.getItem('accessToken')}`
@@ -32,7 +32,7 @@ const AllUsers = () => {
       };
       const handleDelet=(id)=>{
       console.log(id);
-           fetch(`http://localhost:5000/users/${id}`,{
+           fetch(`https://y-pearl-one.vercel.app/users/${id}`,{
            
             method:'DELETE',
            headers:{

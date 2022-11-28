@@ -5,7 +5,7 @@ const useSeller = (email) => {
     const[isSellerLoding,setIsSellerLoding]=useState(true)
     useEffect(()=>{
         if(email){
-            fetch(`http://localhost:5000/users/${email}`)
+            fetch(`https://y-pearl-one.vercel.app/users/${email}`)
             .then(res=>res.json())
             .then(data=>{
                 // console.log(data)

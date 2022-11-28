@@ -16,7 +16,7 @@ const CheckOutForm = ({boking}) => {
         // Create PaymentIntent as soon as the page loads
         //authorization:`bearer ${localStorage.getItem('accessToken')}`
 
-        fetch("http://localhost:5000/create-payment-intent", {
+        fetch("https://y-pearl-one.vercel.app/create-payment-intent", {
           method: "POST",
           headers: { 
             "Content-Type": "application/json",
@@ -86,7 +86,7 @@ const CheckOutForm = ({boking}) => {
           bookingId:_id
       
         }
-        fetch('http://localhost:5000/payments',{
+        fetch('https://y-pearl-one.vercel.app/payments',{
           method:'POST',
           headers:{
             'content-type':'application/json',

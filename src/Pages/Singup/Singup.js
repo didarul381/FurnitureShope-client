@@ -54,7 +54,7 @@ const Singup = () => {
 
     const saveUser=(name,role,email)=>{
         const user={name,role,email};
-        fetch('http://localhost:5000/users',{
+        fetch('https://y-pearl-one.vercel.app/users',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

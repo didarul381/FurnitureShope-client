@@ -14,7 +14,7 @@ const MyProduct = () => {
       const[catagoriestwo,setCatagoriestwo]=useState([]);
    
          useEffect(()=>{
-        fetch('http://localhost:5000/catagories')
+        fetch('https://y-pearl-one.vercel.app/catagories')
         .then(res=>res.json())
         .then(data=>{
           console.log(data[0].products)
@@ -41,7 +41,7 @@ const MyProduct = () => {
            }
 
          console.log(name)
-         fetch('http://localhost:5000/catagories',{
+         fetch('https://y-pearl-one.vercel.app/catagories',{
            
           method:"PUT",
          headers:{

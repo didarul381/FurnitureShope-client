@@ -45,7 +45,7 @@ const router=createBrowserRouter([
             path:'/category/:id',
             element:<PrivateRoutes><Catagory></Catagory></PrivateRoutes>,
             loader:({params})=>{
-               return fetch(`http://localhost:5000/catagorie/${params.id}`)
+               return fetch(`https://y-pearl-one.vercel.app/catagorie/${params.id}`)
             }
         }
     ]
@@ -76,7 +76,7 @@ const router=createBrowserRouter([
             path:'/dashboard/payment/:id',
             element:<Payment></Payment>,
             loader:({params})=>{
-                return fetch(`http://localhost:5000/bookings/${params.id}`)
+                return fetch(`https://y-pearl-one.vercel.app/bookings/${params.id}`)
              }
         }
     ]
