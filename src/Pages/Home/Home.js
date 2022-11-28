@@ -41,6 +41,10 @@ const Home = () => {
                 <h1 className='text-center text-black-900 my-6'>Popular Furniture By Choice  <br></br>
                         Categories our customers love to check out</h1>
                 <div className="flex flex-wrap mx-6 my-12">
+                <div className='mx-12 ' >
+                        <img src='https://hatil.com/sites/default/files/Wardrobe--Furniture.jpg' alt=''></img>
+                        <p>Ward Door</p>
+                    </div>
                 
                 <div className='mx-12' >
                         <img src='https://hatil.com/sites/default/files/Bed-Hatil.png' alt=''></img>
