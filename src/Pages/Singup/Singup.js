@@ -3,9 +3,11 @@ import { useForm} from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
+import useTitle from '../../Hook/useTitle';
 import useToken from '../../Hook/useToken';
 
 const Singup = () => {
+    useTitle("Registration")
     const{ createUser,updateUser}=useContext(AuthContext)
     const{register, formState: { errors },handleSubmit}=useForm();
     const[createUserEmail,setCreateUserEmail]=useState('')

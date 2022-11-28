@@ -3,9 +3,11 @@ import { Link, Outlet } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider';
 import useAdmin from '../../Hook/useAdmin';
 import useSeller from '../../Hook/useSeller';
+import useTitle from '../../Hook/useTitle';
 import Footer from '../../Pages/Shared/Footer/Footer';
 import Navbar from "../../Pages/Shared/Navbar/Navbar"
 const DashboardLayout = () => {
+  useTitle("Dash board")
   const{user}=useContext(AuthContext)
   const[isAdmin]=useAdmin(user?.email)
   const[isSeller]=useSeller(user?.email)

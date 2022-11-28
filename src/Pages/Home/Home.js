@@ -1,8 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../Hook/useTitle';
 import DisplayCatagories from '../DisplayCatagories/DisplayCatagories';
 
 const Home = () => {
+    useTitle("Home")
     // const[catagories,setCatagories]=useState([]);
 
 
