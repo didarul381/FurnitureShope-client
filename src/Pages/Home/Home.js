@@ -41,6 +41,10 @@ const Home = () => {
                 <h1 className='text-center text-black-900 my-6'>Popular Furniture By Choice  <br></br>
                         Categories our customers love to check out</h1>
                 <div className="flex  mx-12 my-12">
+                <div className='mx-12' >
+                        <img src='https://hatil.com/sites/default/files/Bed-Hatil.png' alt=''></img>
+                        <p>Bed</p>
+                    </div>
                 
                     <div className='mx-12' >
                         <img src='https://hatil.com/sites/default/files/Sofa-set.png' alt=''></img>
@@ -65,7 +69,9 @@ const Home = () => {
                     
                     <img src='https://hatil.com/sites/default/files/Dining-Set-Hatil.png' alt=''></img>
                     <p>Dining</p>
+                    
                 </div>
+                    
                 </div>
                 <h1 className="text-primary my-5 mx-auto text-3xl text-center">Catagories.....</h1>
             <div className='grid gap-6 grid-cols-1  md:grid-cols-2  lg:grid-cols-3 mx-10'>
